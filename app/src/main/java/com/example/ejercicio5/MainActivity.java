@@ -29,5 +29,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+       counter.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+           Integer numero = Integer.parseInt(textView.getText().toString());
+           numero++;
+           textView.setText(numero.toString());
+
+         }
+     });
     }
 }
